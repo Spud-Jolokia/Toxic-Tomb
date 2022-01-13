@@ -1,0 +1,72 @@
+/* Light mode */
+:root {
+    --body-bg: #121212;
+    --body-color: #eee;
+    --a-color: #809fff;
+ }
+ 
+ /* Dark mode */
+ @media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg: #121212;
+        --body-color: #eee;
+        --a-color: #809fff;
+    }
+ }
+ 
+ body {
+    background: var(--body-bg);
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--body-color);
+    font-size: 1em;
+    line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: var(--a-color);
+}
+
+header {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.875em;
+    line-height: 60%;
+}
+
+.child {
+    position: absolute;
+    left: 0;
+    max-width: 250px;
+}
+
+.child-1 {
+    background-color: black;
+    opacity: 0.4;
+    height: 300px;
+    width: 250px;
+    top: 60px;
+    left: 0;
+}
+
+.child-2 {
+    top: 60px;
+}
+
+.child-3 {
+    top: 200px;
+}
+
+.parent {
+    position: relative;
+    height: 500;
+}
